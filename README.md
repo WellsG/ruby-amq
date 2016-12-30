@@ -6,6 +6,11 @@
 #### ActiveMQ 5.13 
 
 ### Test scripts
+|   |   |
+|---|---|
+| topic | topic://VirtualTopic.test.topic1 |
+| queue  | queue://Consumer.aa.VirtualTopic.test.>  |
+||queue://Consumer.bb.VirtualTopic.test.> |
 1. send msg to vitual topic
 ```
 PN_TRACE_FRM=1 ruby send_ssl.rb -a amqp://<host>:5672/"topic://VirtualTopic.test.topic1" "{key:value}"
