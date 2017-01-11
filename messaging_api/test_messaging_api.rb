@@ -1,4 +1,8 @@
 #!/usr/bin/ruby
+
+# https://qpid.apache.org/releases/qpid-0.32/messaging-api/ruby/api/Qpid/Messaging/Session.html
+# https://qpid.apache.org/releases/qpid-0.32/messaging-api/ruby/examples/index.html
+
 ## usage: PN_TRACE_FRM=1 bundle exec ruby test_send.rb
 ENV['QPID_SSL_CERT_DB'] ||= '/etc/pki/nssdb'
 ENV['QPID_SSL_CERT_NAME'] ||= "" #<nick name>
