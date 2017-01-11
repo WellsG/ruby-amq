@@ -5,7 +5,7 @@ ENV['QPID_SSL_CERT_NAME'] ||= "" #<nick name>
 #
 require 'qpid_messaging'
 #
-broker  = ARGV[1] || "amqp:wguo.usersys.redhat.com:5672"
+broker  = ARGV[1] || "amqp:<hostname>:5672"
 options = ARGV[2] || {transport:'ssl'}
 #p 'connect to umb ...'
 connection = Qpid::Messaging::Connection.new :url => broker, :options => options
